@@ -24,9 +24,9 @@
   </div>  
   </div>
   <div class="produtos">
-   <div class="titulolinha">Primeiro, seu produto </div>
+   <div class="titulolinha">Primeiro, seu prato </div>
    <div class="comidalinha">
-     <div class="produto borda">
+     <div class="produto "  onclick="selecionarfrango(this)">
        <img src="/imgs/frango_yin_yang2.png">
        <h1>Frango Yin Yang</h1>
        <h2>Um pouco de batata, um pouco de salada</h2>
@@ -35,7 +35,7 @@
       <div class="verificado"> <img src="/imgs/icone.png"></div>
       </div>
      </div>
-     <div class="produto borda">
+     <div class="produto " onclick="selecionarfrango(this)">
       <img src="/imgs/frango_yin_yang2.png">
       <h1>Frango Yin Yang</h1>
       <h2>Um pouco de batata, um pouco de salada</h2>
@@ -44,7 +44,7 @@
         <div class="verificado"> <img src="/imgs/icone.png"></div>
         </div>
     </div>
-    <div class="produto borda">
+    <div class="produto " onclick="selecionarfrango(this)">
       <img src="/imgs/frango_yin_yang2.png">
       <h1>Frango Yin Yang</h1>
       <h2>Um pouco de batata, um pouco de salada</h2>
@@ -56,7 +56,7 @@
    </div>
    <div class="titulolinha"> Agora, sua bebida </div>
    <div class="bebidalinha">
-    <div class="produto borda">
+    <div class="produto " onclick="selecionarcoca(this)">
       <img src="/imgs/coquinha_gelada 2.png">
       <h1> Coquinha gelada </h1>
       <h2>Lata 350ml</h2>
@@ -65,7 +65,7 @@
         <div class="verificado"> <img src="/imgs/icone.png"></div>
         </div>
     </div>
-     <div class="produto borda">
+     <div class="produto " onclick="selecionarcoca(this)">
       <img src="/imgs/coquinha_gelada 2.png">
       <h1> Coquinha gelada </h1>
       <h2>Lata 350ml</h2>
@@ -74,7 +74,7 @@
         <div class="verificado"> <img src="/imgs/icone.png"></div>
         </div>
     </div>
-    <div class="produto borda">
+    <div class="produto" onclick="selecionarcoca(this)">
       <img src="/imgs/coquinha_gelada 2.png">
       <h1> Coquinha gelada </h1>
       <h2>Lata 350ml</h2>
@@ -86,7 +86,7 @@
    </div>
    <div class="titulolinha">Por fim, sua sobremesa </div>
    <div class="sobremesalinha">
-    <div class="produto borda">
+    <div class="produto " onclick="selecionarpudim(this)">
       <img src="imgs/pudim 2.png">
       <h1>Pudim</h1>
       <h2>Apenas um pudim</h2>
@@ -95,7 +95,7 @@
         <div class="verificado"> <img src="/imgs/icone.png"></div>
         </div>
     </div>
-     <div class="produto borda">
+     <div class="produto" onclick="selecionarpudim(this)">
       <img src="imgs/pudim 2.png">
       <h1>Pudim</h1>
       <h2>Apenas um pudim</h2>
@@ -104,7 +104,7 @@
         <div class="verificado"> <img src="/imgs/icone.png"></div>
         </div>
     </div>
-    <div class="produto borda">
+    <div class="produto" onclick="selecionarpudim(this)">
       <img src="imgs/pudim 2.png">
       <h1>Pudim</h1>
       <h2>Apenas um pudim</h2>
