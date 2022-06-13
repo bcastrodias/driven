@@ -45,7 +45,7 @@ body img {
     font-size: 25px;
     font-weight: bold;}
 
-.produtoslinha {
+.comidalinha, .bebidalinha, .sobremesalinha {
     display: flex;
     overflow-x:scroll;
 }
@@ -60,6 +60,17 @@ body img {
     font-family: "Encode Sans", sans-serif;
     font-family: "Roboto", sans-serif !important;
 }   
+
+.borda {
+    border: solid 5px #32b72f;
+    padding: 9px;
+}
+
+.ok
+{display:initial;
+}
+
+
 
 .produto img {
     margin: 10px;
@@ -84,6 +95,15 @@ margin-left: 15px;
     font-size: bold;
 }
 
+.precoeverificado {display: inline-flex;}
+
+.verificado {
+    width: 19px;
+    height: 19px;
+    margin-top: 10px;
+    margin-right: 5px;
+    display: none;}
+   
 .bottom {
     display: flex;
     width: 100%;
