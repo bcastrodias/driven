@@ -1,34 +1,11 @@
 
-function selecionarfrango(elemento) {
-   
-    const comidacheck = document.querySelector (".comidalinha .borda")
 
-    const check = document.querySelector (".comidalinha .ok")
+function selecionarItem(elemento, classe) {
+    const itemcheck = document.querySelector (`.${classe} .borda`)
+    const check = document.querySelector(`.${classe} .ok`)
 
-
-if (comidacheck !== null) {
-    comidacheck.classList.remove ("borda")
-}
-
-elemento.classList.add("borda");
-
-if (check !== null){
-    check.classList.remove("ok")
-}
-elemento.querySelector(".verificado").classList.add("ok");
-
-
-console.log(elemento)
-}
-
-function selecionarcoca(elemento){
-    
-    const cocacheck = document.querySelector (".bebidalinha .borda")
-    const check = document.querySelector(".bebidalinha .ok ")
-console.log(elemento)
-
-if (cocacheck !==null) {
-    cocacheck.classList.remove ("borda")
+if (itemcheck !==null) {
+    itemcheck.classList.remove ("borda")
 }
 elemento.classList.add("borda")
 
@@ -37,24 +14,14 @@ if (check !== null){
 }
 elemento.querySelector (".verificado").classList.add("ok");
 
+let confirmafrango = document.querySelector('.comidalinha .borda');
+let confirmacoca = document.querySelector('.bebidalinha .borda');
+let confirmapudim = document.querySelector('.sobremesalinha .borda');
 
-
-}
-
-function selecionarpudim(elemento){
-    pegarpudim = elemento.innerHTML;
-    const pudimcheck = document.querySelector (".sobremesalinha .borda")
-    const check = document.querySelector(".sobremesalinha .ok ")
-
-if (pudimcheck !==null) {
-    pudimcheck.classList.remove ("borda")
-}
-elemento.classList.add("borda")
-
-if (check !== null){
-    check.classList.remove ("ok")
-}
-elemento.querySelector (".verificado").classList.add("ok");
+if (confirmafrango !== null && confirmacoca !== null && confirmapudim !== null){
+ const habilitado = document.getElementsByTagName("button")[0] .classList.add("habilitado")
+}  
+ 
 
 }
 
@@ -78,32 +45,34 @@ function linkwhats(){
         const coca = cocabox.innerText
         const pudim = pudimbox.innerText
 
+
         const frangoprecotxt = frangoprecobox.innerText
         const cocaprecotxt = cocaprecobox.innerText
         const pudimprecotxt = pudimprecobox.innerText
 
         const frangopreco = parseFloat(frangoprecotxt)
          const cocapreco = parseFloat(cocaprecotxt)
-         const pudimpreco = parseFloat(pudimpreco)
+         const pudimpreco = parseFloat(pudimprecotxt)
 
          const total = frangopreco + cocapreco + pudimpreco
 
-
+console.log(frangoprecotxt, cocaprecotxt, pudimprecotxt)
 
          let textodecompra = `
          Olá, gostaria de fazer o pedido:
-         - Prato: ${frango}
-          - Bebida: ${coca}
-         - Sobremesa: ${pudim}
+         - Prato: ${frango}-${frangoprecotxt}
+          - Bebida: ${coca}-${cocaprecotxt}
+         - Sobremesa: ${pudim}-${pudimprecotxt}
          Total: R$ ${total.toFixed(2)}`
 
           const link = textodecompra;
          const encodedlink = encodeURIComponent(link, "_blank");
-         const allLink = "https://wa.me/5547997084660?text=" + `${encodedlink}`
-
+         const allLink = "https://wa.me/5511991484522?text=" + `${encodedlink}`
+console.log(allLink)
          openLink(allLink) }
         }
 
+    
 function openLink (element) {window.open(element);
 }
 
