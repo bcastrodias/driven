@@ -7,6 +7,11 @@
 body img {
     height: 80px;
     width: 150px;
+    margin: 5px;
+}
+
+.tudo {
+
 }
 
 .top {
@@ -121,7 +126,6 @@ margin-left: 15px;
     height: 61px;
     border-radius: 50px;
     font-size: 20px;
-    
 
 }
 
@@ -129,4 +133,8 @@ margin-left: 15px;
     color: #FFFFFF;
 
   
+}
+
+.habilitado {background: #32B72F;
+    color: #FFFFFF;
 }

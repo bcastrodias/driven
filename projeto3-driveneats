@@ -17,6 +17,7 @@
     <title> DrivenEats</title>
   </head>
   <body>
+    <div class="tudo"> 
   <div class="top">
       <div class="textotopo">
     <h1> DrivenEats</h1>
@@ -26,38 +27,38 @@
   <div class="produtos">
    <div class="titulolinha">Primeiro, seu prato </div>
    <div class="comidalinha">
-     <div class="produto "  onclick="selecionarfrango(this)">
-       <img src="/imgs/frango_yin_yang2.png">
+     <div class="produto "  onclick="selecionarItem(this, 'comidalinha')">
+       <img src="/imgs/frango_yin_yang2.png" class="item">
        <h1>Frango Yin Yang</h1>
        <h2>Um pouco de batata, um pouco de salada</h2>
       <div class="precoeverificado">
-      <div class="preco"><h3>R$ 14,90</h3></div> 
-      <div class="verificado"> <img src="/imgs/icone.png"></div>
+      <div class="preco"><h3>R$ 13,90</h3></div> 
+      <div class="verificado"> <img src="/imgs/icone.png" class="item"></div>
       </div>
      </div>
-     <div class="produto " onclick="selecionarfrango(this)">
-      <img src="/imgs/frango_yin_yang2.png">
+     <div class="produto " onclick="selecionarItem(this, 'comidalinha')">
+      <img src="/imgs/frango_yin_yang2.png" class="item">
       <h1>Frango Yin Yang</h1>
       <h2>Um pouco de batata, um pouco de salada</h2>
       <div class="precoeverificado">
-        <div class="preco"><h3>R$ 14,90</h3></div> 
-        <div class="verificado"> <img src="/imgs/icone.png"></div>
+        <div class="preco"><h3>R$ 12,90</h3></div> 
+        <div class="verificado"> <img src="/imgs/icone.png" class="item"></div>
         </div>
     </div>
-    <div class="produto " onclick="selecionarfrango(this)">
-      <img src="/imgs/frango_yin_yang2.png">
+    <div class="produto " onclick="selecionarItem(this, 'comidalinha')">
+      <img src="/imgs/frango_yin_yang2.png" class="item">
       <h1>Frango Yin Yang</h1>
       <h2>Um pouco de batata, um pouco de salada</h2>
       <div class="precoeverificado">
-        <div class="preco"><h3>R$ 14,90</h3></div> 
-        <div class="verificado"> <img src="/imgs/icone.png"></div>
+        <div class="preco"><h3>R$ 11,90</h3></div> 
+        <div class="verificado"> <img src="/imgs/icone.png" class="item"></div>
         </div>
     </div>
    </div>
    <div class="titulolinha"> Agora, sua bebida </div>
    <div class="bebidalinha">
-    <div class="produto " onclick="selecionarcoca(this)">
-      <img src="/imgs/coquinha_gelada 2.png">
+    <div class="produto " onclick="selecionarItem(this, 'bebidalinha')">
+      <img src="/imgs/coquinha_gelada 2.png" class="item">
       <h1> Coquinha gelada </h1>
       <h2>Lata 350ml</h2>
       <div class="precoeverificado">
@@ -65,8 +66,8 @@
         <div class="verificado"> <img src="/imgs/icone.png"></div>
         </div>
     </div>
-     <div class="produto " onclick="selecionarcoca(this)">
-      <img src="/imgs/coquinha_gelada 2.png">
+     <div class="produto " onclick="selecionarItem(this, 'bebidalinha')">
+      <img src="/imgs/coquinha_gelada 2.png" class="item">
       <h1> Coquinha gelada </h1>
       <h2>Lata 350ml</h2>
       <div class="precoeverificado">
@@ -74,8 +75,8 @@
         <div class="verificado"> <img src="/imgs/icone.png"></div>
         </div>
     </div>
-    <div class="produto" onclick="selecionarcoca(this)">
-      <img src="/imgs/coquinha_gelada 2.png">
+    <div class="produto" onclick="selecionarItem(this, 'bebidalinha')">
+      <img src="/imgs/coquinha_gelada 2.png" class="item">
       <h1> Coquinha gelada </h1>
       <h2>Lata 350ml</h2>
       <div class="precoeverificado">
@@ -86,8 +87,8 @@
    </div>
    <div class="titulolinha">Por fim, sua sobremesa </div>
    <div class="sobremesalinha">
-    <div class="produto " onclick="selecionarpudim(this)">
-      <img src="imgs/pudim 2.png">
+    <div class="produto " onclick="selecionarItem(this, 'sobremesalinha')">
+      <img src="imgs/pudim 2.png" class="item">
       <h1>Pudim</h1>
       <h2>Apenas um pudim</h2>
       <div class="precoeverificado">
@@ -95,8 +96,8 @@
         <div class="verificado"> <img src="/imgs/icone.png"></div>
         </div>
     </div>
-     <div class="produto" onclick="selecionarpudim(this)">
-      <img src="imgs/pudim 2.png">
+     <div class="produto" onclick="selecionarItem(this, 'sobremesalinha')">
+      <img src="imgs/pudim 2.png" class="item">
       <h1>Pudim</h1>
       <h2>Apenas um pudim</h2>
       <div class="precoeverificado">
@@ -104,22 +105,23 @@
         <div class="verificado"> <img src="/imgs/icone.png"></div>
         </div>
     </div>
-    <div class="produto" onclick="selecionarpudim(this)">
-      <img src="imgs/pudim 2.png">
+    <div class="produto" onclick="selecionarItem(this, 'sobremesalinha')">
+      <img src="imgs/pudim 2.png" class="item">
       <h1>Pudim</h1>
-      <h2>Apenas um pudim</h2>
+      <h2>Apenas um pudim</h2>    
       <div class="precoeverificado">
-        <div class="preco"><h3>R$ 9,90</h3></div> 
+        <div class="preco"><h3>R$ 9,90</h3></div>
         <div class="verificado"> <img src="/imgs/icone.png"></div>
         </div>
     </div>
    </div>
   </div>
   <div class="bottom">
-    <button class="pedidos">
-      <p> Selecione os 3 itens para fechar o pedido </p>
+    <button class="pedidos" onclick="linkwhats()">
+     Selecione os 3 itens para fechar o pedido 
     </button>
-  </div>  
+  </div>
+</div>
 <script src="script.js"></script>
 
 </body>

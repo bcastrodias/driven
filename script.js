@@ -50,18 +50,26 @@ function linkwhats(){
         const cocaprecotxt = cocaprecobox.innerText
         const pudimprecotxt = pudimprecobox.innerText
 
-        const frangopreco = parseFloat(frangoprecotxt)
-         const cocapreco = parseFloat(cocaprecotxt)
-         const pudimpreco = parseFloat(pudimprecotxt)
+        const frangopreco = Array.from(frangoprecotxt.matchAll(/(\d+)/g)) 
 
-         const total = frangopreco + cocapreco + pudimpreco
+         const cocapreco = Array.from(cocaprecotxt.matchAll(/(\d+)/g)) 
+
+         const pudimpreco = Array.from(pudimprecotxt.matchAll(/(\d+)/g)) 
+
+         const valortruedofrango = Number(`${frangopreco[0][0]}.${frangopreco[1][0]}`)
+         const valortruedacoca = Number(`${cocapreco[0][0]}.${cocapreco[1][0]}`)
+         const valortruedopudim = Number(`${pudimpreco[0][0]}.${pudimpreco[1][0]}`)
+
+
+
+         const total = valortruedofrango + valortruedacoca + valortruedopudim;
 
 console.log(frangoprecotxt, cocaprecotxt, pudimprecotxt)
 
          let textodecompra = `
          Olá, gostaria de fazer o pedido:
          - Prato: ${frango}-${frangoprecotxt}
-          - Bebida: ${coca}-${cocaprecotxt}
+         - Bebida: ${coca}-${cocaprecotxt}
          - Sobremesa: ${pudim}-${pudimprecotxt}
          Total: R$ ${total.toFixed(2)}`
 
