@@ -7,3 +7,10 @@ function GameStart(){
 }
 GameStart();
 
+//Array de Parrots
+
+parrots = [``
+
+
+
+]
